@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda Online</title>
+
+    <!-- ESTILOS CSS -->
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!-- SCRIPTS -->
+
+    <script defer src="/assets/js/menuHamburguesa.js"></script>
+    <script defer src="/assets/js/carritoClick.js"></script>
+
+    <!-- ICONOS -->
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <header>
+      <nav class="nav">
+        <button id="abrir-menu-hamburguesa">
+          <i class="bx bx-menu icono-izquierda"></i>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+          <button class="cerrar-menu margin-top" id="cerrar-menu-hamburguesa">
+            X
+          </button>
+
+          <li class="margin-top">
+            <a href="#productos">Productos</a>
+          </li>
+
+          <li><a href="#novedades">Novedades</a></li>
+
+          <li><a href="#nosotros">Nosotros</a></li>
+
+          <li>
+            <a href="#ingresar"><i class="bx bx-user"></i> Ingresar</a>
+          </li>
+        </ul>
+
+        <img src="/assets/img/logo.jpeg" class="nav-menu-logo" />
+        <div class="iconos-derecha">
+          <button id="icono-buscar"><i class="bx bx-search"></i></button>
+          <button id="carritoIcono"><i class="bx bx-cart"></i></button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- BARRA DE BUSQUEDA -->
+
+    <div class="contenedor-barra-de-busqueda">
+      <input
+        type="text"
+        id="barra-de-busqueda"
+        placeholder="Buscar..."
+        class="barra-de-busqueda"
+      />
+      <div class="iconos-derecha">
+        <i class="bx bx-search icono-busqueda"></i>
+        <button id="cerrar-lupa" class="cerrar-lupa">X</button>
+      </div>
+    </div>
+
+    <!-- Carrito Click -->
+
+    <div id="carrito" class="carrito">
+      <div class="carrito-header">
+        <h1>Carrito de compras</h1>
+        <span id="x" class="close">×</span>
+      </div>
+      <div class="productos">
+        <div class="producto productoDiv">
+          <img src="" alt="Producto" />
+          <div class="info">
+            <h2>BLACK DRAMA (S)</h2>
+            <div class="cantidad">
+              <button class="botonRestar">-</button>
+              <span class="cantidadCarrito">1</span>
+              <button class="botonSumar">+</button>
+            </div>
+          </div>
+          <div class="precio">$35.000,00</div>
+          <div class="eliminar basuraIcono">🗑</div>
+        </div>
+      </div>
+      <hr />
+      <div class="subtotal">
+        <p>SUBTOTAL (sin envío):</p>
+        <p>$70.000,00</p>
+      </div>
+
+      <div class="total">
+        <p>Total:</p>
+        <p>$70.000,00</p>
+      </div>
+      <button class="comprar">Iniciar compra</button>
+    </div>
+
+    <!-- Imagen principal -->
+
+    <section class="pagina-principal"></section>
+
+    <!-- Sección de novedades -->
+
+    <section id="novedades">
+      <h2 class="titulo-novedades centrar margin-top">NOVEDADES</h2>
+      <button class="boton-novedades centrar margin-top">Ver Todo</button>
+      <div class="productos-flex margin-top">
+        <div>
+          <img
+            src="/assets/img/remera-sin-fondo.png"
+            class="remera-novedades"
+          />
+          <p>Remera</p>
+        </div>
+        <div>
+          <img
+            src="/assets/img/remera-sin-fondo.png"
+            class="remera-novedades"
+          />
+          <p>Remera</p>
+        </div>
+        <div>
+          <img
+            src="/assets/img/remera-sin-fondo.png"
+            class="remera-novedades"
+          />
+          <p>Remera</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de imágenes adicionales -->
+
+    <section class="imagenes-adicionales">
+      <img src="/assets/img/camisa.jpeg" class="imagen-adicional margin-top" />
+      <img src="/assets/img/shorts.avif" class="imagen-adicional" />
+      <img src="/assets/img/remera.jpg" class="imagen-adicional" />
+    </section>
+
+    <!-- Sección de suscripción -->
+
+    <section class="suscripcion centrar margin-top">
+      <h2>SUSCRIBITE Y RECIBI TODAS LAS NOVEDADES ANTES DE TIEMPO!</h2>
+      <form class="margin-top">
+        <input
+          type="email"
+          placeholder="Correo Electrónico"
+          required
+          class="mail-suscripcion"
+        />
+        <button class="boton-suscripcion" type="submit">
+          <i class="bx bx-right-arrow-alt"></i>
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="centrar margin-top">
+      <img src="/assets/img/logo.jpeg" class="footer-logo" />
+
+      <ul class="margin-top links-footer">
+        <li><a href="#">Política de envíos</a></li>
+        <li><a href="#">Política de cambios, devoluciones y garantías</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+      </ul>
+      <hr class="linea margin-top" />
+      <p class="margin-top">
+        &copy; Bandidos San Juan | Desarrollado por ComCode
+      </p>
+    </footer>
+  </body>
+</html>
