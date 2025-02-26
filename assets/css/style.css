@@ -25,6 +25,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a,
 ul,
 li {
@@ -268,7 +272,7 @@ button {
     left: 0;
     top: 0;
     width: 80%;
-    height: 90%;
+    height: 100%;
   }
 
   .nav-menu li {
@@ -289,7 +293,7 @@ button {
     position: absolute;
     left: -1rem;
     bottom: 0;
-    width: calc(100% + 2rem);
+    width: calc(94% + 2rem);
     height: 1px;
     background-color: #000;
   }
@@ -299,24 +303,26 @@ button {
   }
 
   .icono-izquierda {
+    font-size: 1.5rem;
     margin-left: 1rem;
     color: white;
   }
 
   .iconos-derecha {
+    font-size: 1.5rem;
     margin-right: 1rem;
     color: white;
   }
 
   /* SECCION IMAGEN PRINCIPAL */
 
-  /* .pagina-principal {
+  .pagina-principal {
     background-image: url(/assets/img/logo.jpeg);
     background-position: center;
 
     width: 100%;
     height: 90vh;
-  } */
+  }
 
   /* SECCION NOVEDADES */
 

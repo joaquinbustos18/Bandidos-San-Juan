@@ -5,6 +5,7 @@ let iconoBuscar = document.getElementById("icono-buscar");
 let cerrarLupa = document.getElementById("cerrar-lupa");
 let contenedorBuscar = document.querySelector(".contenedor-barra-de-busqueda");
 let body = document.body;
+let enlacesMenu = document.querySelectorAll("#nav-menu a"); // Selecciona todos los enlaces dentro del menú
 
 // Abrir Menú Hamburguesa
 abrirMenuHamburguesa.addEventListener("click", (e) => {
@@ -47,4 +48,12 @@ document.addEventListener("click", (event) => {
   if (!clickDentroBusqueda) {
     contenedorBuscar.classList.remove("abrir");
   }
+});
+
+// Cerrar Menú Hamburguesa al hacer click en cualquier enlace
+enlacesMenu.forEach((enlace) => {
+  enlace.addEventListener("click", () => {
+    navMenu.classList.remove("abrir");
+    body.classList.remove("no-scroll");
+  });
 });

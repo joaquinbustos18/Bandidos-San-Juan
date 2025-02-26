@@ -25,6 +25,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a,
 ul,
 li {
@@ -266,7 +270,7 @@ button {
     left: 0;
     top: 0;
     width: 80%;
-    height: 90%;
+    height: 100%;
   }
 
   .nav-menu li {
@@ -297,11 +301,13 @@ button {
   }
 
   .icono-izquierda {
+    font-size: 1.5rem;
     margin-left: 1rem;
     color: white;
   }
 
   .iconos-derecha {
+    font-size: 1.5rem;
     margin-right: 1rem;
     color: white;
   }
