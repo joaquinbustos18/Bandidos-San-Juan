@@ -1,3 +1,7 @@
+/* FUENTES */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
   --center-text: center;
 }
@@ -26,6 +30,7 @@
 }
 
 html {
+  font-family: "Noto Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -353,6 +358,10 @@ button {
 
   /* SECCION SUSCRIPCION */
 
+  .suscripcion-h2 {
+    font-size: 1.4rem;
+  }
+
   .suscripcion {
     background-color: black;
     color: white;
@@ -410,5 +419,9 @@ button {
     border: none;
     border: 0.5px solid gray;
     width: 100%;
+  }
+
+  .copy {
+    margin-bottom: 2rem;
   }
 }
