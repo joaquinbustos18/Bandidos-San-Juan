@@ -335,7 +335,10 @@ button {
     display: block;
     height: 3rem;
     width: 8rem;
+    margin-top: 1rem;
+    margin-bottom: 4em;
     background-color: transparent;
+    border: 0.5px solid black;
   }
 
   .productos-flex {
@@ -347,6 +350,53 @@ button {
   .remera-novedades {
     width: 8rem;
     height: 8rem;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(100%);
+  }
+
+  /* Contenedor del carrusel */
+  .carousel-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  /* Estructura para mostrar 3 imágenes */
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  /* Cada imagen ocupa 33.33% del carrusel */
+  .carousel-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Imágenes */
+  .imagen-slider {
+    width: 70%;
+    height: auto;
+  }
+
+  .swiper-container {
+    width: 100%;
+    max-width: 400px; /* Ajustá según el tamaño del contenedor */
+    margin-bottom: 2rem;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+  }
+  .swiper-slide img {
+    width: 100%;
+    max-width: 100px; /* Ajustá el tamaño de las imágenes */
   }
 
   /* SECCION IMAGENES ADICIONALES */

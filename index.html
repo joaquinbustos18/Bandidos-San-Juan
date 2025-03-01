@@ -8,6 +8,10 @@
     <!-- ESTILOS CSS -->
 
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 
     <!-- SCRIPTS -->
 
@@ -114,37 +118,58 @@
 
     <section id="novedades">
       <h2 class="titulo-novedades centrar margin-top">NOVEDADES</h2>
-      <button class="boton-novedades centrar margin-top">Ver Todo</button>
-      <div class="productos-flex margin-top">
-        <div>
-          <img
-            src="/assets/img/remera-sin-fondo.png"
-            class="remera-novedades"
-          />
+      <button class="boton-novedades centrar">
+        <a href="/pages/productos.html">Ver Todo </a>
+      </button>
+    </section>
+
+    <div class="swiper-container margin-top">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="/assets/img/remera-sin-fondo.png" alt="Remera 1" />
           <p>Remera</p>
+          <p>$20.000</p>
         </div>
-        <div>
-          <img
-            src="/assets/img/remera-sin-fondo.png"
-            class="remera-novedades"
-          />
+        <div class="swiper-slide">
+          <img src="/assets/img/remera-sin-fondo.png" alt="Remera 2" />
           <p>Remera</p>
+          <p>$20.000</p>
         </div>
-        <div>
-          <img
-            src="/assets/img/remera-sin-fondo.png"
-            class="remera-novedades"
-          />
+        <div class="swiper-slide">
+          <img src="/assets/img/remera-sin-fondo.png" alt="Remera 3" />
           <p>Remera</p>
+          <p>$20.000</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="/assets/img/remera-sin-fondo.png" alt="Remera 4" />
+          <p>Remera</p>
+          <p>$20.000</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="/assets/img/remera-sin-fondo.png" alt="Remera 5" />
+          <p>Remera</p>
+          <p>$20.000</p>
         </div>
       </div>
-    </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3, // Muestra 3 elementos a la vez
+        spaceBetween: 10, // Espacio entre elementos
+        loop: false, // No hacer loop infinito
+        slidesPerGroup: 1, // Mueve de a 1 elemento
+        grabCursor: true, // Habilita el cursor de "agarrar" en el mouse
+        touchEventsTarget: "container", // Habilita el deslizamiento en todo el contenedor
+      });
+    </script>
 
     <!-- Sección de imágenes adicionales -->
 
     <section class="imagenes-adicionales">
       <img src="/assets/img/camisa.jpeg" class="imagen-adicional margin-top" />
-      <img src="/assets/img/shorts.avif" class="imagen-adicional" />
+      <img src="/assets/img/shorts.jpeg" class="imagen-adicional" />
       <img src="/assets/img/remera.jpg" class="imagen-adicional" />
     </section>
 
@@ -152,7 +177,7 @@
 
     <section class="suscripcion centrar margin-top">
       <h2 class="suscripcion-h2">
-        SUSCRIBITE Y RECIBI TODAS LAS NOVEDADES ANTES DE TIEMPO!
+        ¡SUSCRÍBETE Y RECIBÍ TODAS LAS NOVEDADES ANTES DE TIEMPO!
       </h2>
       <form class="margin-top">
         <input
