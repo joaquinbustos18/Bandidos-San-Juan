@@ -48,7 +48,7 @@ button {
   cursor: pointer;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 395px) {
   /* BARRA DE BUSQUEDA */
 
   .contenedor-barra-de-busqueda {
