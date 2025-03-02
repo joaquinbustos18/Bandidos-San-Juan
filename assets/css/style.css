@@ -322,7 +322,7 @@ button {
   /* SECCION IMAGEN PRINCIPAL */
 
   .pagina-principal {
-    background-image: url(/assets/img/logo.jpeg);
+    background-image: url(/assets/img/fondo-inicio.jpg);
     background-position: center;
 
     width: 100%;
