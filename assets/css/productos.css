@@ -378,6 +378,12 @@ button {
     width: 100%;
   }
   .copy {
+    color: white;
     margin-bottom: 2rem;
+  }
+
+  .final {
+    background-color: black;
+    width: 100%;
   }
 }
