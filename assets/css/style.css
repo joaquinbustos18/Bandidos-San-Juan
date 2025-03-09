@@ -450,6 +450,11 @@ button {
   }
 
   .copy {
+    color: white;
     margin-bottom: 2rem;
+  }
+  .final {
+    width: 100%;
+    background-color: black;
   }
 }
