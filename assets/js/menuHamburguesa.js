@@ -1,3 +1,5 @@
+// Variables globales
+
 let abrirMenuHamburguesa = document.getElementById("abrir-menu-hamburguesa");
 let cerrarMenuHamburguesa = document.getElementById("cerrar-menu-hamburguesa");
 let navMenu = document.getElementById("nav-menu");
