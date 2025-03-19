@@ -34,7 +34,6 @@ const basuraIconos = document.querySelectorAll(".basuraIcono");
 
 basuraIconos.forEach((basuraIcono) => {
   basuraIcono.addEventListener("click", () => {
-    // Elimina el producto específico (el contenedor del producto que contiene el ícono de basura)
     const productoDiv = basuraIcono.closest(".productoDiv");
     productoDiv.style.display = "none";
   });
